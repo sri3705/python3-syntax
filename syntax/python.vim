@@ -17,6 +17,9 @@ if !g:python3syntax
     finish
 endif
 
+" Record that this syntax is being used
+call s:Python3SyntaxDefault('b:current_syntax', 'python3')
+
 " OPTIONS: {{{
 
 " Highlight all by default
