@@ -294,13 +294,13 @@ endif
 
     " Builtin functions
     if g:python3syntax_builtin_funcs
-        syn keyword pythonBuiltinFunc   __import__ abs all any apply
-        syn keyword pythonBuiltinFunc   bin callable classmethod cmp coerce compile
-        syn keyword pythonBuiltinFunc   delattr dir divmod enumerate eval execfile filter
+        syn keyword pythonBuiltinFunc   __import__ abs all any ascii
+        syn keyword pythonBuiltinFunc   bin bytearray bytes callable classmethod compile
+        syn keyword pythonBuiltinFunc   delattr dir divmod enumerate eval exec filter
         syn keyword pythonBuiltinFunc   format getattr globals locals hasattr hash help hex id
-        syn keyword pythonBuiltinFunc   input intern isinstance issubclass iter len map max min
-        syn keyword pythonBuiltinFunc   next oct open ord pow property range xrange
-        syn keyword pythonBuiltinFunc   raw_input reduce reload repr reversed round setattr
+        syn keyword pythonBuiltinFunc   input isinstance issubclass iter len map max memoryview min
+        syn keyword pythonBuiltinFunc   next oct open ord pow property range
+        syn keyword pythonBuiltinFunc   repr reversed round setattr
         syn keyword pythonBuiltinFunc   slice sorted staticmethod sum vars zip
 
         if g:python3syntax_print_as_function
