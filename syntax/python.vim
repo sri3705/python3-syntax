@@ -86,7 +86,8 @@ endif
     syn keyword pythonStatement exec return
     syn keyword pythonStatement pass raise
     syn keyword pythonStatement global nonlocal assert
-    syn keyword pythonStatement yield
+    syn match   pythonStatement "\<yield\>" display
+    syn match   pythonStatement "\<yield\s\+from\>" display
     syn keyword pythonLambdaExpr lambda
     syn keyword pythonStatement with as
 
@@ -104,7 +105,8 @@ endif
 
     syn keyword pythonRepeat        for while
     syn keyword pythonConditional   if elif else
-    syn keyword pythonInclude       import from
+    syn keyword pythonInclude       import
+    syn match   pythonInclude       "\<from\>"
     syn keyword pythonException     try except finally
     syn keyword pythonOperator      and in is not or
 
